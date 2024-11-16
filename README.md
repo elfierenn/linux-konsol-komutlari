@@ -1,169 +1,161 @@
 # Linux Terminal Komutları
 Bu projede 20 tane linux terminal komutları gösterilmiştir.
 
-## Klasör ve Dosya Yönetimi Komutları
+## Dizin İşlemleri (Navigasyon ve Yönetim)
+#### pwd Komutu
+Bulunduğunuz dizini gösterir.
+```
+Örnek:
+> pwd
+```
+![photo_2024-11-16_20-10-14](https://github.com/user-attachments/assets/8aa7c6c7-100e-4b7e-9b50-1be005ae1c89)
+
 #### mkdir Komutu
-Yeni bir klasör oluşturur.
+Yeni bir dizin oluşturur.
 ```
 Örnek:
 > mkdir Merve
 ```
-![photo_2024-11-16_03-05-35](https://github.com/user-attachments/assets/c6d0802a-fe0c-463e-ab6a-5374d353718d)
+![photo_2024-11-16_20-10-17](https://github.com/user-attachments/assets/c18f13b8-2e0a-4061-a20b-bb15f41b10fa)
 
 #### rmdir Komutu
-Boş bir klasörü siler.
+Boş bir dizini siler.
 ```
 Örnek:
-> rmdir Çöp
+> rmdir Merve
 ```
-![photo_2024-11-16_03-05-40](https://github.com/user-attachments/assets/11500a3d-3094-4d6f-be61-2a681759ad31)
+![photo_2024-11-16_20-10-19](https://github.com/user-attachments/assets/c41fe030-30c2-4834-b4b0-39f7925fff2b)
 
 #### cd Komutu
-Çalışma dizinini değiştirir.
+Belirtilen dizine geçiş yapar.
 ```
 Örnek:
 > cd Merve
 ```
-![photo_2024-11-16_03-05-42](https://github.com/user-attachments/assets/f852ff54-b9c7-45e3-b74f-e51a14950ed2)
+![photo_2024-11-16_20-10-22](https://github.com/user-attachments/assets/7e78ddfc-9770-47fa-bd59-9959cd4946f6)
 
-#### dir Komutu
-Mevcut dizindeki dosya ve klasörlerin listesini gösterir.
+## Dosya İşlemleri
+#### touch Komutu
+Yeni bir dosya oluşturur.
 ```
 Örnek:
-> dir
+> touch yazı.txt
 ```
-![photo_2024-11-16_03-05-45](https://github.com/user-attachments/assets/a64fa8fe-ab9d-462b-a0da-7b7936de00bd)
+![photo_2024-11-16_20-10-29](https://github.com/user-attachments/assets/33298860-eada-406e-8db3-11130cae3134)
 
-#### tree Komutu
-Geçerli dizindeki tüm dosya ve klasörleri ağaç şeklinde gösterir.
+#### nano Komutu
+Dosya içeriklerini düzenlemek için bir metin editörüdür.
 ```
 Örnek:
-> tree
+> nano yazı.txt
 ```
-![photo_2024-11-16_03-05-49](https://github.com/user-attachments/assets/e93cac84-63dd-4459-90fe-faec7a448357)
+![photo_2024-11-16_20-11-49](https://github.com/user-attachments/assets/50b5a01a-89b4-411e-bd35-f901f86d869f)
+![photo_2024-11-16_20-11-52](https://github.com/user-attachments/assets/6d1a5ed9-96cf-44ab-bcd8-63819ead7515)
 
-#### rename Komutu
-Bir dosyanın veya klasörün adını değiştirir.
+#### cat Komutu
+Dosyanın tüm içeriğini gösterir.
 ```
 Örnek:
-> rename yazı.txt yazı123.txt
+> cat yazı.txt
 ```
-![photo_2024-11-16_03-05-51](https://github.com/user-attachments/assets/efc04f3d-624e-4749-8334-81364d1f5976)
+![photo_2024-11-16_20-11-56](https://github.com/user-attachments/assets/7f4ed43d-fb93-41de-a85c-9678dc9d5ffc)
 
-## Dosya İçeriği Gösterme ve Arama Komutları
-#### echo Komutu
-Belirli bir metni ekrana yazdırır.
+#### head Komutu
+Dosyanın ilk birkaç satırını gösterir.
 ```
 Örnek:
-> echo Merve Yılmaz > yazı.txt
+> head yazı.txt
 ```
-![photo_2024-11-16_03-05-55](https://github.com/user-attachments/assets/faaf95c4-5ffc-4b38-b2ff-d5836a55454d)
+![photo_2024-11-16_20-11-58](https://github.com/user-attachments/assets/5ece7bbe-e8ba-4b7a-8c59-2d3a8901d082)
 
-#### type Komutu
-Bir dosyanın içeriğini ekrana yazdırır.
+#### tail Komutu
+Dosyanın son birkaç satırını gösterir.
 ```
 Örnek:
-> type yazı.txt
+> tail yazı.txt
 ```
-![photo_2024-11-16_03-06-01](https://github.com/user-attachments/assets/6889e0b3-f2bd-4c48-98cc-f5c9c6088150)
+![photo_2024-11-16_20-12-00](https://github.com/user-attachments/assets/5ced2ba0-dd99-482e-971e-dc45fa56cd5e)
 
-#### find Komutu
-Bir dosyada belirtilen kelimeyi arar.
+#### cp Komutu
+Dosya veya dizin kopyalar.
 ```
 Örnek:
-> find "Merve" yazı.txt
+> cp yazı.txt Yılmaz
 ```
-![photo_2024-11-16_03-06-05](https://github.com/user-attachments/assets/e26c3187-1fc4-41ee-8ddb-68051df6ed84)
+![photo_2024-11-16_20-12-02](https://github.com/user-attachments/assets/5cb9a85a-6fde-4aef-a786-5536c8e2dd13)
 
-## Dosya Taşıma ve Kopyalama Komutları
-#### copy Komutu
-Bir dosyayı başka bir yere kopyalar.
+#### mv Komutu
+Dosyayı taşır veya yeniden adlandırır.
 ```
 Örnek:
-> copy yazı.txt Yılmaz
+> mv yazı.txt Yılmaz
 ```
-![photo_2024-11-16_03-06-08](https://github.com/user-attachments/assets/1e2d7553-b259-46b7-9224-45b33a674234)
+![photo_2024-11-16_20-12-05](https://github.com/user-attachments/assets/ddea000a-c490-47f5-9116-c7e44ea98e07)
 
-#### move Komutu
-Bir dosyayı veya klasörü başka bir yere taşır.
+#### rm Komutu
+Dosyayı siler.
 ```
 Örnek:
-> move Yılmaz Yılmaz123
+> rm çöp.txt
 ```
-![photo_2024-11-16_03-06-11](https://github.com/user-attachments/assets/5fd77109-572e-4466-9b40-d6fc22c6ae4c)
+![photo_2024-11-16_20-12-08](https://github.com/user-attachments/assets/0eb63331-a3b9-4ffa-a127-d7b0e5c92ba5)
 
-#### del Komutu
-Bir dosyayı siler.
+# Dizin İçeriği Görüntüleme
+#### ls Komutu
+Dizin içeriğini listeler.
 ```
 Örnek:
-> del yazı.txt
+> ls
 ```
-![photo_2024-11-16_03-06-14](https://github.com/user-attachments/assets/b792df00-2261-4996-a084-c68f51a27338)
-> [!NOTE]
-> Size "Emin misiniz?" şeklinde bir soru sorulacaktır. Eğer silmek istiyorsanız Y, silmek istemiyorsanız N yazınız.
+![photo_2024-11-16_20-12-56](https://github.com/user-attachments/assets/962e682d-b618-4893-88c7-705ce6eed92b)
 
-# Sistem Bilgileri ve Yöneticilik Komutları
-#### driverquery Komutu
-Sistemde yüklü olan tüm sürücülerin listesini gösterir.
+# Sistem Bilgisi
+#### uname Komutu
+Sistem bilgilerini görüntüler.
 ```
 Örnek:
-> driverquery
+> uname
 ```
-![photo_2024-11-16_03-06-18](https://github.com/user-attachments/assets/b9ce9ffe-c0a5-4e1e-bc61-2cba3697a2e2)
+![photo_2024-11-16_20-13-00](https://github.com/user-attachments/assets/c1071289-50c6-4223-9812-0decb8a01ea8)
 
-#### tasklist Komutu
-Çalışan tüm işlemleri listeler
+#### uname -a Komutu
+Tüm sistem bilgilerini gösterir.
 ```
 Örnek:
-> tasklist
+> uname -a
 ```
-![photo_2024-11-16_03-06-20](https://github.com/user-attachments/assets/80c74412-1ed0-466f-9d45-1a884d18ceaf)
+![photo_2024-11-16_20-13-02](https://github.com/user-attachments/assets/3d53a9b8-7d26-466d-ac91-013044dcf94b)
 
-#### getmac Komutu
-Bilgisayarınızdaki ağ bağdaştırıcılarının MAC adreslerini gösterir.
+#### hostname Komutu
+Bilgisayarın adını gösterir.
 ```
 Örnek:
-> getmac
+> hostname
 ```
-![photo_2024-11-16_03-06-23](https://github.com/user-attachments/assets/c84775bb-153e-43df-a5ba-91f0e5412f9f)
+![photo_2024-11-16_20-13-04](https://github.com/user-attachments/assets/5b4237e6-00b5-480f-bc47-60d7f506950a)
 
-#### vol Komutu
-Bir sürücünün etiketini ve seri numarasını gösterir.
+#### uptime Komutu
+Sistem çalışma süresini gösterir.
 ```
 Örnek:
-> vol C:
+> uptime
 ```
-![photo_2024-11-16_03-06-25](https://github.com/user-attachments/assets/4d00ff2e-d289-4c46-a8dd-b6a601290039)
+![photo_2024-11-16_20-13-06](https://github.com/user-attachments/assets/14b46505-6f20-4f07-aca2-89d426f7203b)
 
-#### date /T Komutu
-Günün tarihini sadece yazdırır.
+#### date Komutu
+Tarih ve saati görüntüler.
 ```
 Örnek:
-> date /T
+> date
 ```
-![photo_2024-11-16_03-06-28](https://github.com/user-attachments/assets/620ce27f-7c68-4662-acb7-18f37db200fa)
+![photo_2024-11-16_20-13-07](https://github.com/user-attachments/assets/7c8c746d-0387-447b-b792-e26140209bd2)
 
-# Görev ve Uygulama Yönetimi Komutları
-#### taskmgr.exe Komutu
-Görev Yöneticisi'ni açar.
+# Süreç Yönetimi
+#### ps Komutu
+Çalışan süreçleri listeler.
 ```
 Örnek:
-> taskmgr.exe
+> ps
 ```
-![photo_2024-11-16_03-06-30](https://github.com/user-attachments/assets/86c5560e-732c-4d50-8264-51515200c7f7)
-
-#### notepad.exe Komutu
-Not Defteri'ni açar.
-```
-Örnek:
-> notepad.exe
-```
-![photo_2024-11-16_03-06-33](https://github.com/user-attachments/assets/392251f5-d4ab-4ef5-b06a-d42f4e7e0006)
-
-#### pause Komutu
-Komutların çalışmasını duraklatır ve bir tuşa basılmasını bekler.
-```
-Örnek:
-> pause
-```
-![photo_2024-11-16_03-06-35](https://github.com/user-attachments/assets/5a171275-1457-4cc6-99ae-a08b338a6361)
+![photo_2024-11-16_20-13-09](https://github.com/user-attachments/assets/6cd97459-ac70-447c-8ca2-3f92932dd93e)
+![photo_2024-11-16_20-13-12](https://github.com/user-attachments/assets/d6a47f9b-e85c-4014-8f45-33bb5115585b)
