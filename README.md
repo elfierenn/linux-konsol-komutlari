@@ -1,5 +1,5 @@
-# Linux Terminal Komutları
-Bu projede 20 tane linux terminal komutları gösterilmiştir.
+# Linux Konsol Komutları
+Bu projede 20 tane linux konsol komutları gösterilmiştir.
 
 ## Dizin İşlemleri (Navigasyon ve Yönetim)
 #### pwd Komutu
