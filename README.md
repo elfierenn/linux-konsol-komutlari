@@ -158,4 +158,11 @@ Tarih ve saati görüntüler.
 > ps
 ```
 ![photo_2024-11-16_20-13-09](https://github.com/user-attachments/assets/6cd97459-ac70-447c-8ca2-3f92932dd93e)
+
+#### top Komutu
+Aktif süreçleri ve sistem kaynaklarını gösterir.
+```
+Örnek:
+> top
+```
 ![photo_2024-11-16_20-13-12](https://github.com/user-attachments/assets/d6a47f9b-e85c-4014-8f45-33bb5115585b)
